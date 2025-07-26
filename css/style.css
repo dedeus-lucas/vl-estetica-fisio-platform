@@ -1,0 +1,7 @@
+@import url('./variables.css');
+
+body {
+    font-family: var(--fonte-principal);
+    background-color: var(--cor-secundaria);
+    color: var(--cor-primaria);
+}

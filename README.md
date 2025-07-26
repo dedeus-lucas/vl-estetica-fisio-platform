@@ -18,16 +18,17 @@ Este projeto consiste em uma **landing page responsiva**, com navegação fluida
 ```bash
 vl-landing-page/
 ├── assets/
-│   ├── img/           # Imagens e logo da clínica
-│   └── icon/          # Ícones SVG ou PNG
+│   ├── icon/          # Ícones SVG ou PNG
+│   └── img/           # Imagens e logo da clínica
 ├── css/
 │   ├── reset.css      # Reset moderno de CSS
-│   └── style.css      # Estilos principais do site
+│   ├── style.css      # Estilos principais do site
+│   └── variables.css  # Variáveis globais (cores, fontes, espaçamentos)
 ├── js/
 │   └── script.js      # Interações simples em JS
 ├── index.html         # Página principal (landing page)
-├── README.md          # Documentação do projeto
-└── LICENSE.md         # Licença de uso
+├── LICENSE.md         # Licença de uso
+└── README.md          # Documentação do projeto
 ```
 
 ## 📲 Contato e Redirecionamento
