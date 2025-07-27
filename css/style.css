@@ -1,7 +1,51 @@
 @import url('./variables.css');
 
-body {
-    font-family: var(--fonte-principal);
+/* header (navbar) */
+.header {
+    width: 100%;
     background-color: var(--cor-secundaria);
+    padding: 0.6rem 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: var(--fonte-principal);
+    position: relative;
+    z-index: 10;
+}
+/* logo + nome da marca */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.logo-img {
+    width: 75px;
+    height: auto;
+}
+
+.brand-name {
+    font-size: 1.5rem;
+    font-weight: 600;
     color: var(--cor-primaria);
+    white-space: nowrap; /* evita quebra de linha */
+    line-height: 1;
+    display: flex;
+    align-items: center;
+}
+
+.nav-list ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: var(--cor-primaria);
+    font-size: 1rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
 }

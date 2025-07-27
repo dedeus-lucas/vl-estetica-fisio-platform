@@ -1,6 +1,6 @@
 /* css/variables.css */
 :root {
-    --cor-primaria: #e4ddd3;
-    --cor-secundaria: #84857b;
+    --cor-primaria: #e4ddd3; /* para a logo e textos */
+    --cor-secundaria: #84857b; /* para background, fundo chapado */
     --fonte-principal: 'Inter', sans-serif;
 }
