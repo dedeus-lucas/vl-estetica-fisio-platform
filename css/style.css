@@ -3,12 +3,12 @@
 /* header (navbar) */
 .header {
     width: 100%;
-    background-color: var(--cor-secundaria);
+    background-color: var(--color-secondary);
     padding: 0.6rem 3rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-family: var(--fonte-principal);
+    font-family: var(--principal-font);
     position: relative;
     z-index: 10;
 }
@@ -24,10 +24,16 @@
     height: auto;
 }
 
+.logo .vl-highlight {
+    font-size: 2.5rem;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+
 .brand-name {
     font-size: 1.5rem;
     font-weight: 600;
-    color: var(--cor-primaria);
+    color: var(--color-primary);
     white-space: nowrap; /* evita quebra de linha */
     line-height: 1;
     display: flex;
@@ -44,8 +50,60 @@
 
 .nav-list a {
     text-decoration: none;
-    color: var(--cor-primaria);
-    font-size: 1rem;
+    color: var(--color-primary);
+    font-size: 1.2rem;
     font-weight: 500;
     transition: color 0.3s ease;
+}
+
+.hero-section {
+    background-color: var(--color-secondary);
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 2rem;
+    box-sizing: border-box;
+    text-align: center;
+    font-family: var(--principal-font);
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero-title {
+    font-family: var(--principal-font);
+    font-size: 6rem;
+    color: var(--color-primary);
+    font-weight: 300;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+}
+
+.hero-subtitle {
+    font-family: var(--principal-font);
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: var(--color-primary);
+    line-height: 1.4;
+    margin-bottom: 2rem;
+}
+
+.btn-primary {
+    font-family: var(--principal-font);
+    display: inline-block;
+    background-color: #fcd34d;
+    color: #1f2937;
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #fbbf24
+    transform: scale(1.05);
 }

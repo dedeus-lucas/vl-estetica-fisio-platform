@@ -23,7 +23,9 @@
     <link rel="icon" type="image/png" sizes="192x192" href="/assets/icon/android-chrome-192x192.png">
     <link rel="icon" type="image/png" sizes="512x512" href="/assets/icon/android-chrome-512x512.png">
     <!-- Fontes externas -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
     <!-- CSS do projeto -->
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
@@ -35,7 +37,9 @@
         <!-- Logo + Nome da Empresa -->
         <div class="logo">
             <img class="logo-img" src="./assets/img/logo-nav.png" alt="VL Estética e Fisioterapia" />
-            <span class="brand-name">VL · Estética & Fisiotherapia</span>
+            <span class="brand-name">
+                <span class="vl-highlight">VL</span> · Estética & Fisiotherapia
+            </span>
         </div>
         <!-- Menu de Navegação -->
         <nav class="nav-list">
@@ -49,8 +53,16 @@
     </header>
 
     <main>
-        <section class="hero">
-
+        <section class="hero-section">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    Onde Cuidados e Bem-Estar se Encontram
+                </h1>
+                <p class="hero-subtitle">
+                    Recupere o seu conforto e qualidade de vida com <br> os nossos tratamentos personalizados.
+                </p>
+                <a href="#agendeja" class="btn-primary">Agende já</a>
+            </div>
         </section>
 
         <section class="features">
