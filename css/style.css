@@ -4,7 +4,7 @@
 .header {
     width: 100%;
     background-color: var(--color-secondary);
-    padding: 0.6rem 3rem;
+    padding: 0.6rem 3rem 0.6rem 1.5rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -12,27 +12,23 @@
     position: relative;
     z-index: 10;
 }
-/* logo + nome da marca */
+
+
 .logo {
     display: flex;
     align-items: center;
-    gap: 1rem;
-}
-
-.logo-img {
-    width: 75px;
-    height: auto;
+    justify-content: flex-start;
 }
 
 .logo .vl-highlight {
-    font-size: 2.5rem;
-    font-weight: 700;
-    letter-spacing: 1.5px;
+    font-size: 2rem;
+    font-weight: 500;
 }
 
 .brand-name {
-    font-size: 1.5rem;
-    font-weight: 600;
+    font-size: 1.3rem;
+    font-weight: 400;
+    letter-spacing: -0.05rem;
     color: var(--color-primary);
     white-space: nowrap; /* evita quebra de linha */
     line-height: 1;
@@ -46,26 +42,42 @@
     gap: 2rem;
     margin: 0;
     padding: 0;
+    justify-content: flex-end;
 }
 
 .nav-list a {
     text-decoration: none;
     color: var(--color-primary);
-    font-size: 1.2rem;
-    font-weight: 500;
+    font-size: 1rem;
+    font-weight: 300;
     transition: color 0.3s ease;
 }
 
 .hero-section {
     background-color: var(--color-secondary);
-    min-height: 90vh;
+    min-height: 100vh;
     display: flex;
+    flex-direction: column;
     align-items: center;
+    text-align: center;
     justify-content: center;
-    padding: 0 2rem;
+    padding: 4rem 2rem;
     box-sizing: border-box;
     text-align: center;
     font-family: var(--principal-font);
+}
+
+.hero-logo-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.hero-logo-img {
+    width: 250px;
+    height: auto;
+    max-width: 100%;
 }
 
 .hero-content {
@@ -75,17 +87,18 @@
 
 .hero-title {
     font-family: var(--principal-font);
-    font-size: 6rem;
+    font-size: 4rem;
     color: var(--color-primary);
-    font-weight: 300;
+    font-weight: 500;
     margin-bottom: 1rem;
     line-height: 1.2;
 }
 
 .hero-subtitle {
     font-family: var(--principal-font);
-    font-size: 1.25rem;
-    font-weight: 400;
+    font-size: 1.2rem;
+    font-weight: 300;
+    letter-spacing: -0.05rem;
     color: var(--color-primary);
     line-height: 1.4;
     margin-bottom: 2rem;
@@ -99,7 +112,7 @@
     padding: 1rem 2rem;
     border-radius: 0.5rem;
     text-decoration: none;
-    font-weight: 600;
+    font-weight: 400;
     transition: background-color 0.3s ease;
 }
 
