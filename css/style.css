@@ -107,7 +107,7 @@
     font-family: var(--principal-font);
     display: inline-block;
     background-color: #fcd34d;
-    color: #1f2937;
+    color: var(--color-font);
     padding: 1rem 2rem;
     border-radius: 0.5rem;
     text-decoration: none;
@@ -119,3 +119,58 @@
     background-color: #fbbf24;
     transform: scale(1.05);
 }
+
+.mission-section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url('../assets/img/mission-section_michael-busch-unsplash.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.mission-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-secondary-rgba-70);
+    z-index: 1;
+}
+
+.mission-container {
+    position: relative;
+    z-index: 2;
+    padding: 8rem;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.mission-card {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 1.5rem;
+    max-width: 400px;
+    width: 100%;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+    font-family: var(--principal-font);
+}
+
+.section-title {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: var(--color-primary);
+}
+
+.section-text {
+    font-size: 1rem;
+    color: var(--color-font);
+    line-height: 1.6;
+}
+

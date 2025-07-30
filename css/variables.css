@@ -2,5 +2,7 @@
 :root {
     --color-primary: #e4ddd3; /* para a logo e textos */
     --color-secondary: #84857b; /* para background, fundo chapado */
+    --color-font: #1f2937; /* para textos */
     --principal-font: 'Inter', sans-serif;
+    --color-secondary-rgba-70: rgba(132, 133, 123, 0.7); /* versão rgba da cor secundária com opacidade (70%) */
 }
