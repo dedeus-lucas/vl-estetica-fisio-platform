@@ -5,16 +5,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="VL · Estética & Fisioterapia">
-    <meta name="copyright" content="© 2025 VL · Estética & Fisioterapia">
-    <!-- SEO e redes sociais
-    AINDA DECIDINDO SUA COLOCAÇÃO
+    <meta name="description" content="VL · Estética & Fisiotherapia - Clínica especializada em cuidados estéticos e fisiotherapia personalizada. Massagem relaxante, ventosaterapia e tratamentos especializados.">
+    <meta name="author" content="VL · Estética & Fisiotherapia">
+    <meta name="copyright" content="© 2025 VL · Estética & Fisiotherapia">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#84857b">
+    <!-- SEO e redes sociais -->
     <meta property="og:url" content="https://vlestetica.com.br">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="VL · Estética & Fisioterapia">
-    <meta property="og:description" content="Clínica especializada em cuidados estéticos e fisioterapia personalizada.">
-    <meta property="og:image" content="https://vlestetica.com.br/imagem-og.jpg"> -->
+    <meta property="og:title" content="VL · Estética & Fisiotherapia">
+    <meta property="og:description" content="Clínica especializada em cuidados estéticos e fisiotherapia personalizada. Massagem relaxante, ventosaterapia e tratamentos especializados.">
+    <meta property="og:image" content="https://vlestetica.com.br/assets/img/logo-large.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="VL · Estética & Fisiotherapia">
+    <meta name="twitter:description" content="Clínica especializada em cuidados estéticos e fisiotherapia personalizada.">
+    <meta name="twitter:image" content="https://vlestetica.com.br/assets/img/logo-large.png">
     <!-- Ícones e favicon -->
     <link rel="shortcut icon" href="/assets/icon/favicon.ico">
     <link rel="icon" type="image/png" sizes="32x32" href="/assets/icon/favicon-32x32.png">
@@ -43,23 +48,26 @@
             </span>
         </div>
         <!-- Menu de Navegação -->
-        <nav class="nav-list">
+        <nav class="nav-list" aria-label="Menu principal">
             <ul>
-                <li><a href="#home">Início</a></li>
-                <li><a href="#about">Sobre</a></li>
-                <li><a href="#services">Serviços</a></li>
-                <li><a href="#contact">Contato</a></li>
+                <li><a href="#home" role="menuitem">Início</a></li>
+                <li><a href="#about" role="menuitem">Sobre</a></li>
+                <li><a href="#services" role="menuitem">Serviços</a></li>
+                <li><a href="#equipe" role="menuitem">Equipe</a></li>
+                <li><a href="#testimonials" role="menuitem">Depoimentos</a></li>
+                <li><a href="#agendeja" role="menuitem">Contato</a></li>
+                <li><a href="#location" role="menuitem">Localização</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section class="hero-section">
+        <section class="hero-section" id="home">
             <!-- Logo centralizada acima do texto -->
             <div class="hero-logo-wrapper">
-                <img src="./assets/img/logo-large.png" alt="Logo da VL · Estética & Fisioterapia" class="hero-logo-img">
+                <img src="./assets/img/logo-large.png" alt="Logo da VL · Estética & Fisiotherapia" class="hero-logo-img" loading="eager" width="250" height="auto">
             </div>
-
+            
             <div class="hero-content">
                 <h1 class="hero-title">
                     Onde Cuidados e <br> Bem-Estar se Encontram
@@ -71,38 +79,278 @@
             </div>
         </section>
 
-        <section class="mission-section">
+        <section class="mission-section" id="about">
             <div class="mission-overlay"></div>
+            
             <div class="mission-container">
-                <div class="mission-card" data-aos="zoom-in" data-aos duration="800" data-aos-delay="200" data-aos-easing="ease-in-out">
-                    <h2 class="section-title">Nossa Missão</h2>
-                    <p class="section-text">
+                
+                <div class="mission-card" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                    <h2 class="mission-title">Nossa Missão</h2>
+                    
+                    <p class="mission-text">
                         Cuidar de cada pessoa como única, promovendo saúde, bem-estar e autoestima através de práticas integradas de estética e fisioterapia. Atuamos com excelência, sensibilidade e escuta ativa, criando experiências acolhedoras que respeitam histórias, corpos e ritmos. Nossa missão é transformar vidas com ciência, toque humano e propósito.
                     </p>
+
+                </div>
+
+            </div>
+        </section>
+
+        <section class="services-section" id="services">
+            <div class="services-header">
+                <h2 class="services-title">Nossos Serviços</h2>
+                <p class="services-subtitle">Descubra os benefícios dos nossos principais tratamentos</p>
+            </div>
+        
+            <div class="services-slider">
+                <button class="slider-btn prev" aria-label="Slide anterior" type="button">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                        <path d="M15.41 7.41 14 6l-6 6 6 6 1.41-1.41L10.83 12z"/>
+                    </svg>
+                </button>
+        
+                <!-- adição do aria-live -->
+                <div class="services-wrapper" role="region" aria-label="Carrossel de serviços" aria-live="polite">
+                    <!-- card 1 -->
+                    <div class="service-card">
+                        <img src="./assets/img/services-section-relax-massage-612x612.webp" alt="Pessoa recebendo massagem relaxante" loading="lazy" width="612" height="612">
+                        <h3>Massagem Relaxante</h3>
+                        <p>Reduz o estresse, melhora a circulação e alivia tensões</p>
+                    </div>
+        
+                    <!-- card 2 -->
+                    <div class="service-card">
+                        <img src="./assets/img/services-section-cupping-therapy-612x612.webp" alt="Aplicação de ventosas terapêuticas" loading="lazy" width="612" height="612">
+                        <h3>Ventosaterapia</h3>
+                        <p>Estimula a circulação, elimina toxinas e alivia dores musculares</p>
+                    </div>
+        
+                    <!-- card 3 -->
+                    <div class="service-card">
+                        <img src="./assets/img/services-section-myofascial-release-mfr-612x612.webp" alt="Terapia de liberação miofascial" loading="lazy" width="612" height="612">
+                        <h3>Liberação Miofascial</h3>
+                        <p>Alivia tensões musculares e melhora a flexibilidade</p>
+                    </div>
+        
+                    <!-- card 4 -->
+                    <div class="service-card">
+                        <img src="./assets/img/services-section-face-relax-612x612.webp" alt="Massagem facial terapêutica" loading="lazy" width="612" height="612">
+                        <h3>Massagem Facial</h3>
+                        <p>Ativa a circulação, relaxa os músculos e promove rejuvenescimento natural</p>
+                    </div>
+        
+                    <!-- card 5 -->
+                    <div class="service-card">
+                        <img src="./assets/img/services-section-fisiotherapy.webp" alt="Sessão de fisioterapia" loading="lazy" width="612" height="612">
+                        <h3>Fisioterapia</h3>
+                        <p>Tratamento especializado para reabilitação, prevenção e recuperação de lesões</p>
+                    </div>
+        
+                    <!-- card 6 -->
+                    <div class="service-card">
+                        <img src="./assets/img/services-section-auriculotherapy-612x612.webp" alt="Aplicação de auriculoterapia" loading="lazy" width="612" height="612">
+                        <h3>Auriculoterapia</h3>
+                        <p>Equilibra o corpo, controla dores e promove bem-estar emocional</p>
+                    </div>
+                </div>
+        
+                <button class="slider-btn next" aria-label="Próximo slide" type="button">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                        <path d="m8.59 16.59 1.41 1.41 6-6-6-6-1.41 1.41L13.17 12z"/>
+                    </svg>
+                </button>
+            </div>
+        </section>
+        
+        <!-- Team Section -->
+        <section class="team-section" id="equipe">
+            <div class="team-container">
+                <header class="team-header" data-aos="fade-up">
+                    <h2 class="team-title">Nossa Equipe</h2>
+                    <p class="team-subtitle">Profissionais comprometidas com seu bem-estar</p>
+                </header>
+
+                <!-- Member 1: image left, text right -->
+                <article class="team-member" data-aos="fade-up" data-aos-delay="100">
+                    <div class="team-photo">
+                        <!-- Substituir o src pelas fotos em .png com fundo recortado -->
+                        <img src="./assets/img/larissa-equipe.jpg" alt="Larissa - Fisioterapeuta" class="portrait" loading="lazy" width="480" height="auto">
+                    </div>
+                    <div class="team-content">
+                        <h3 class="member-name">Nome da Profissional 1</h3>
+                        <p class="member-role">Fisioterapeuta · Especialista em Coluna</p>
+                        <ul class="member-bio">
+                            <li>Pós-graduação em Fisioterapia Ortopédica</li>
+                            <li>Certificação em Liberação Miofascial</li>
+                            <li>Atuação em reabilitação e prevenção de lesões</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <!-- Member 2: image right, text left -->
+                <article class="team-member reverse" data-aos="fade-up" data-aos-delay="200">
+                    <div class="team-photo">
+                        <img src="./assets/img/vanessa-equipe.jpg" alt="Vanessa - Esteticista" class="portrait" loading="lazy" width="480" height="auto">
+                    </div>
+                    <div class="team-content">
+                        <h3 class="member-name">Nome da Profissional 2</h3>
+                        <p class="member-role">Esteticista · Terapias Integrativas</p>
+                        <ul class="member-bio">
+                            <li>Formação em Estética e Cosmetologia</li>
+                            <li>Especialização em Ventosaterapia e Massagem Facial</li>
+                            <li>Abordagem integrada e humanizada</li>
+                        </ul>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="testimonials" id="testimonials">
+            <div class="testimonials-container">
+                <h2 class="testimonials-title">O que nossos clientes dizem</h2>
+                <div class="testimonials-grid">
+                    <div class="testimonial-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="testimonial-content">
+                            <p>"Excelente atendimento! A massagem relaxante me ajudou muito com o estresse do dia a dia. Recomendo!"</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <h4>Maria Silva</h4>
+                            <span>Cliente há 2 anos</span>
+                </div>
+                    </div>
+                    
+                    <div class="testimonial-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="testimonial-content">
+                            <p>"A ventosaterapia foi fundamental para aliviar minhas dores musculares. Profissionais muito qualificados!"</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <h4>João Santos</h4>
+                            <span>Cliente há 1 ano</span>
+                </div>
+                    </div>
+                    
+                    <div class="testimonial-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="testimonial-content">
+                            <p>"Ambiente acolhedor e tratamentos personalizados. Me sinto renovada a cada sessão!"</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <h4>Ana Costa</h4>
+                            <span>Cliente há 3 anos</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section class="services">
-
+        <!-- Call to Action Section -->
+        <section class="cta" id="agendeja">
+            <div class="cta-container">
+                <div class="cta-content" data-aos="zoom-in">
+                    <h2 class="cta-title">Pronto para cuidar de você?</h2>
+                    <p class="cta-subtitle">Agende sua consulta e descubra como podemos ajudar você a alcançar seu bem-estar</p>
+                    <div class="cta-buttons">
+                        <a href="tel:+5573991054557" class="btn-primary">Ligar agora</a>
+                        <a href="https://wa.me/5573991054557" class="btn-secondary" target="_blank" rel="noopener">WhatsApp</a>
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <section class="testimonials">
-
-        </section>
-
-        <section class="cta">
-
+        <!-- Location Section -->
+        <section class="location-section" id="location">
+            <div class="location-container">
+                <h2 class="location-title">Nossa Localização</h2>
+                <p class="location-subtitle">Venha nos visitar em um ambiente acolhedor e profissional</p>
+                
+                <div class="map-container">
+                    <div class="map-placeholder">
+                        <div class="map-icon">📍</div>
+                        <h3>Google Maps</h3>
+                        <p>Mapa interativo será integrado aqui</p>
+                        <div class="map-info">
+                            <p><strong>Endereço:</strong> Rua Exemplo, 123 - Centro</p>
+                            <p><strong>Horário de Funcionamento:</strong> Seg-Sex: 8h-18h | Sáb: 8h-12h</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
 
+    <!-- Footer -->
     <footer class="footer">
-
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3 class="footer-logo">
+                        <span class="vl-highlight">VL</span> · Estética & Fisiotherapia
+                    </h3>
+                    <p class="footer-description">
+                        Cuidando de você com excelência e carinho há anos. 
+                        Sua saúde e bem-estar são nossa prioridade.
+                    </p>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="footer-section">
+                        <h4>Navegação</h4>
+                        <ul>
+                            <li><a href="#home">Início</a></li>
+                            <li><a href="#about">Sobre</a></li>
+                            <li><a href="#services">Serviços</a></li>
+                            <li><a href="#equipe">Equipe</a></li>
+                            <li><a href="#testimonials">Depoimentos</a></li>
+                            <li><a href="#agendeja">Contato</a></li>
+                            <li><a href="#location">Localização</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-section">
+                        <h4>Serviços</h4>
+                        <ul>
+                            <li><a href="#services">Massagem Relaxante</a></li>
+                            <li><a href="#services">Ventosaterapia</a></li>
+                            <li><a href="#services">Fisioterapia</a></li>
+                            <li><a href="#services">Tratamentos Estéticos</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-section">
+                        <h4>Contato</h4>
+                        <ul>
+                            <li><a href="tel:+5573991054557">📞 (73) 99105-4557</a></li>
+                            <li><a href="mailto:contato@vlestetica.com.br">✉️ contato@vlestetica.com.br</a></li>
+                            <li><a href="https://wa.me/5573991054557" target="_blank" rel="noopener">💬 WhatsApp</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <p class="footer-copyright">
+                        © 2025 VL · Estética & Fisiotherapia. Todos os direitos reservados.
+                    </p>
+                    <div class="footer-social">
+                        <a href="#" aria-label="Instagram" class="social-link">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="Facebook" class="social-link">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </footer>
     <!-- JS do AOS -->
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
+    <script>AOS.init();</script>
+    <script src="./js/services.js" defer></script>
 </body>
 </html>

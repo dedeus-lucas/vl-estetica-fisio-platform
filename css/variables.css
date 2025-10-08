@@ -1,8 +1,12 @@
 /* css/variables.css */
 :root {
     --color-primary: #e4ddd3; /* para a logo e textos */
-    --color-secondary: #84857b; /* para background, fundo chapado */
+    --color-secondary: #84857b; /* para background, hero-section */
+    --color-secondary-dark: #2d2d2d; /* para background escuro tipo chumbo */
     --color-font: #1f2937; /* para textos */
     --principal-font: 'Inter', sans-serif;
-    --color-secondary-rgba-70: rgba(132, 133, 123, 0.7); /* versão rgba da cor secundária com opacidade (70%) */
+
+    /* versões com opacidade */
+    --color-secondary-rgba-70: rgba(132, 133, 123, 0.7); /* para overlays */
+    --color-secondary-dark-rgba-60: rgba(45, 45, 45, 0.6); /* para overlays escuros */
 }
