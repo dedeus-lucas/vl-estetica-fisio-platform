@@ -48,4 +48,4 @@ vl-landing-page/
 📦 Primeira entrega funcional completa com estrutura modular e escalável
 
 ## 🧑‍💻 Autor do Desenvolvimento
-Desenvolvido por [@LucasdeDeus](https://github.com/lcssdedeus) com suporte técnico contínuo de mentoria especializada.
+Desenvolvido por [@LucasdeDeus](https://github.com/lucas-dracodev) com suporte técnico contínuo de mentoria especializada.
