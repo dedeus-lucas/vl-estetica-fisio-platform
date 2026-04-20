@@ -261,8 +261,8 @@
     width: 100%;
     max-width: 380px;
     height: auto;
-    aspect-ratio: 3/4;
     object-fit: cover;
+    object-position: center top;
     /* máscara orgânica para evitar visual quadrado/chapeado */
     -webkit-mask-image: radial-gradient(140% 140% at 30% 20%, #000 60%, transparent 61%);
     mask-image: radial-gradient(140% 140% at 30% 20%, #000 60%, transparent 61%);
