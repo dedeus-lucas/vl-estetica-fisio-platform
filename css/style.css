@@ -224,7 +224,7 @@
 
 .team-member {
     display: grid;
-    grid-template-columns: 1fr 1.2fr;
+    grid-template-columns: 1fr 1fr;
     gap: 2rem;
     align-items: center;
     background: rgba(255, 255, 255, 0.06);
@@ -240,15 +240,15 @@
 }
 
 .team-member.reverse {
-    grid-template-columns: 1.2fr 1fr;
+    grid-template-columns: 1fr 1fr;
 }
 
-.team-member.reverse .team-photo {
-    order: 2;
+.team-member.reverse {
+    direction: rtl;
 }
 
-.team-member.reverse .team-content {
-    order: 1;
+.team-member.reverse * {
+    direction: ltr;
 }
 
 .team-photo {
