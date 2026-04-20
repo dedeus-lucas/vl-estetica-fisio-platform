@@ -343,6 +343,7 @@
 .services-slider {
     position: relative;
     overflow: hidden;
+    width: 100%;
     padding: 1.5rem 0;
 
     /* FADE LATERAL (efeito Netflix) */
@@ -364,7 +365,7 @@
     display: flex;
     gap: 1.5rem;
     width: max-content;
-    animation: scrollServices 20s linear infinite;
+    animation: scrollServices 30s linear infinite;
 }
 
 .service-card {
