@@ -225,12 +225,14 @@
 .team-member {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 2rem;
+    gap: 3rem;
     align-items: center;
+
     background: rgba(255, 255, 255, 0.06);
     border: 1px solid rgba(255, 255, 255, 0.08);
     border-radius: 1.25rem;
-    padding: 2rem;
+
+    padding: 2.5rem;
     box-shadow: 0 8px 28px rgba(0, 0, 0, 0.12);
     backdrop-filter: blur(4px);
 }
@@ -239,22 +241,32 @@
     margin-top: 2rem;
 }
 
-.team-member.reverse {
-    grid-template-columns: 1fr 1fr;
-}
-
+/* INVERTE SEM QUEBRAR GRID */
 .team-member.reverse {
     direction: rtl;
 }
 
+/* volta texto normal dentro do card */
 .team-member.reverse * {
     direction: ltr;
 }
 
+/* FOTO */
 .team-photo {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+/* IMPORTANTE: limita largura do texto (isso resolve tua sensação de "longe") */
+.team-content {
+    max-width: 520px;
+}
+
+/* melhora leitura do conteúdo */
+.member-bio {
+    padding-left: 1.1rem;
+    line-height: 1.6;
 }
 
 .portrait {
