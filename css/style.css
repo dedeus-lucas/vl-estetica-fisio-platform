@@ -316,12 +316,12 @@
 }
 
 .services-section {
+    overflow: hidden;
     font-family: var(--principal-font);
-    padding: 4rem 2rem;
+    padding: 4rem 0;
     display: flex;
     flex-direction: column;
     text-align: center;
-    overflow-x: hidden;
 }
 
 .services-header {
@@ -338,6 +338,11 @@
 .services-subtitle {
     font-size: 1.25rem;
     color: var(--color-font);
+}
+
+.services-container {
+    width: 100%;
+    overflow: hidden;
 }
 
 .services-slider {
@@ -364,8 +369,9 @@
 .services-wrapper {
     display: flex;
     gap: 1.5rem;
-    width: max-content;
-    animation: scrollServices 30s linear infinite;
+    /* Essencial para o loop */
+    width: 200%;
+    animation: scrollServices 25s linear infinite;
 }
 
 .service-card {
@@ -829,11 +835,11 @@
 
 /* ANIMAÇÃO CONTÍNUA */
 @keyframes scrollServices {
-    0% {
+    from {
         transform: translateX(0);
     }
 
-    100% {
+    to {
         transform: translateX(-50%);
     }
 }
