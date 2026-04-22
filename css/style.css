@@ -369,9 +369,8 @@
 .services-wrapper {
     display: flex;
     gap: 1.5rem;
-    /* Essencial para o loop */
-    width: 200%;
-    animation: scrollServices 25s linear infinite;
+    width: max-content;
+    animation: scrollServices 40s linear infinite;
 }
 
 .service-card {
@@ -835,11 +834,11 @@
 
 /* ANIMAÇÃO CONTÍNUA */
 @keyframes scrollServices {
-    from {
+    0% {
         transform: translateX(0);
     }
 
-    to {
+    100% {
         transform: translateX(-50%);
     }
 }
