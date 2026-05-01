@@ -885,14 +885,6 @@
         font-size: 0.9rem;
     }
 
-    .map-placeholder {
-        padding: 1.5rem 1rem;
-    }
-
-    .map-icon {
-        font-size: 3rem;
-    }
-
     /* ajuste do slider no mobile */
     .services-slider {
         padding: 1.5rem 0;
