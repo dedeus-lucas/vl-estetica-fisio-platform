@@ -700,7 +700,11 @@
     text-decoration: none;
     transition: opacity 0.3s ease;
     font-size: 0.95rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
 }
+
 
 .footer-section a:hover {
     opacity: 0.8;
