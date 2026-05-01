@@ -696,7 +696,7 @@
         <div class="footer-bottom">
           <div class="footer-bottom-content">
             <p class="footer-copyright">
-              © 2025 VL · Estética & Fisiotherapia. Todos os direitos reservados.
+              © <span id="year"></span> VL · Estética & Fisiotherapia. Todos os direitos reservados.
             </p>
             <div class="footer-social">
               <a href="#" aria-label="Instagram" class="social-link">
@@ -732,6 +732,10 @@
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
     <script>
       AOS.init();
+    </script>
+    
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
     </script>
   </body>
 </html>
