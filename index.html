@@ -1,77 +1,187 @@
 <!doctype html>
 <html lang="pt-br">
   <head>
-    <!-- Configurações básicas -->
+    <!-- Basic Meta -->
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
     <meta
       name="description"
-      content="VL · Estética & Fisiotherapia - Clínica especializada em cuidados estéticos e fisiotherapia personalizada. Massagem relaxante, ventosaterapia e tratamentos especializados."
+      content="VL · Estética & Fisiotherapia - Clínica especializada em fisioterapia, estética avançada, terapias integrativas e bem-estar personalizado."
     />
-    <meta name="robots" content="index, follow" />
-    <meta name="theme-color" content="#84857b" />
-    <!-- SEO e redes sociais -->
-    <meta property="og:url" content="https://vlestetica.com.br" />
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="VL · Estética & Fisiotherapia" />
+    <meta
+      name="keywords"
+      content="fisioterapia, estética, massagem relaxante, drenagem linfática, ventosaterapia, dry needling, auriculoterapia, Jequié, Bahia"
+    />
+    <meta
+      name="author"
+      content="Lucas Silva de Deus - Full Stack Developer"
+    />
+    <meta
+      name="robots"
+      content="index, follow"
+    />
+    <meta
+      name="theme-color"
+      content="#84857b"
+    />
+
+    <!-- Open Graph -->
+    <meta
+      property="og:locale"
+      content="pt_BR"
+    />
+    <meta
+      property="og:type"
+      content="website"
+    />
+    <meta
+      property="og:title"
+      content="VL · Estética & Fisiotherapia"
+    />
     <meta
       property="og:description"
-      content="Clínica especializada em cuidados estéticos e fisiotherapia personalizada. Massagem relaxante, ventosaterapia e tratamentos especializados."
+      content="Tratamentos personalizados em fisioterapia, estética e terapias integrativas para saúde, recuperação e bem-estar."
+    />
+    <meta
+      property="og:url"
+      content="https://vlestetica.com.br"
     />
     <meta
       property="og:image"
       content="https://vlestetica.com.br/assets/img/logo-large.png"
     />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="VL · Estética & Fisiotherapia" />
+
+    <!-- Twitter -->
+    <meta
+      name="twitter:card"
+      content="summary_large_image"
+    />
+    <meta
+      name="twitter:title"
+      content="VL · Estética & Fisiotherapia"
+    />
     <meta
       name="twitter:description"
-      content="Clínica especializada em cuidados estéticos e fisiotherapia personalizada."
+      content="Fisioterapia, estética avançada e terapias integrativas com atendimento humanizado."
     />
     <meta
       name="twitter:image"
       content="https://vlestetica.com.br/assets/img/logo-large.png"
     />
-    <!-- Ícones e favicon -->
-    <link rel="shortcut icon" href="assets/icons/favicon.ico" />
-    <!-- Fontes externas -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Canonical -->
+    <link
+      rel="canonical"
+      href="https://vlestetica.com.br"
+    />
+
+    <!-- Favicon -->
+    <link
+      rel="shortcut icon"
+      href="./assets/icons/favicon.ico"
+    />
+
+    <!-- Performance -->
+    <link
+      rel="preload"
+      as="image"
+      href="./assets/img/logo-large.png"
+    />
+
+    <!-- Google Fonts -->
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
       rel="stylesheet"
     />
-    <!-- CSS do projeto -->
-    <link rel="stylesheet" href="./css/reset.css" />
-    <link rel="stylesheet" href="./css/main.css" />
-    <!-- Biblioteca AOS (Animate On Scroll) -->
+
+    <!-- CSS -->
     <link
-      href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
       rel="stylesheet"
+      href="./css/main.css"
     />
-    <!-- Título da Página -->
-    <title>VL · Estética & Fisiotherapia</title>
+
+    <!-- Title -->
+    <title>
+      VL · Estética & Fisiotherapia
+    </title>
   </head>
   <body>
-    <header class="header">
-      <!-- Nome da Empresa -->
-      <div class="logo">
-        <span class="brand-name">
-          <span class="vl-highlight">VL</span> · Estética & Fisiotherapia
-        </span>
+    <header class="header" id="top">
+      <div class="container header-container">
+        <!-- Brand -->
+        <a
+          href="#home"
+          class="logo"
+          aria-label="VL Estética & Fisiotherapia - Voltar ao início"
+        >
+          <span class="brand-name">
+            <span class="vl-highlight">VL</span>
+            · Estética & Fisiotherapia
+          </span>
+        </a>
+
+        <!-- Mobile Menu Button -->
+        <button
+          class="mobile-menu-toggle"
+          type="button"
+          aria-label="Abrir menu de navegação"
+          aria-expanded="false"
+          aria-controls="primary-navigation"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <!-- Navigation -->
+        <nav
+          class="nav"
+          id="primary-navigation"
+          aria-label="Menu principal"
+        >
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a href="#home" class="nav-link">Início</a>
+            </li>
+
+            <li class="nav-item">
+              <a href="#about" class="nav-link">Sobre</a>
+            </li>
+
+            <li class="nav-item">
+              <a href="#services" class="nav-link">Serviços</a>
+            </li>
+
+            <li class="nav-item">
+              <a href="#equipe" class="nav-link">Equipe</a>
+            </li>
+
+            <li class="nav-item">
+              <a href="#testimonials" class="nav-link">Depoimentos</a>
+            </li>
+
+            <li class="nav-item">
+              <a href="#contact" class="nav-link">Contato</a>
+            </li>
+
+            <li class="nav-item">
+              <a href="#location" class="nav-link">Localização</a>
+            </li>
+          </ul>
+        </nav>
       </div>
-      <!-- Menu de Navegação -->
-      <nav class="nav-list" aria-label="Menu principal">
-        <ul>
-          <li><a href="#home">Início</a></li>
-          <li><a href="#about">Sobre</a></li>
-          <li><a href="#services">Serviços</a></li>
-          <li><a href="#equipe">Equipe</a></li>
-          <li><a href="#testimonials">Depoimentos</a></li>
-          <li><a href="#contact">Contato</a></li>
-          <li><a href="#location">Localização</a></li>
-        </ul>
-      </nav>
     </header>
 
     <main>
