@@ -5,12 +5,13 @@
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 1000;
+    z-index: var(--z-header);
 
-    background-color: rgba(132, 133, 123, 0.92);
-    backdrop-filter: blur(12px);
+    background: var(--header-bg);
+    backdrop-filter: blur(var(--header-blur));
 
-    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    border-bottom: 1px solid var(--color-border-light);
+    box-shadow: var(--shadow-soft);
 }
 
 .header-container {
