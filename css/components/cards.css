@@ -59,14 +59,14 @@
 }
 
 .service-title {
-    color: var(--color-text);
+    color: var(--color-font);
 
     font-size: 1.25rem;
     font-weight: 600;
 }
 
 .service-description {
-    color: var(--color-text-light);
+    color: var(--color-secondary-dark);
 
     font-size: 0.95rem;
     line-height: 1.7;
@@ -102,6 +102,8 @@
 
 .team-photo {
     position: relative;
+    border-radius: var(--radius-lg);
+    overflow: hidden;
 }
 
 .team-photo::before {
