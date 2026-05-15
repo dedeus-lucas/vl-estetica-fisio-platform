@@ -1,12 +1,40 @@
 /* css/variables.css */
 :root {
-    --color-primary: #e4ddd3; /* para a logo e textos */
-    --color-secondary: #84857b; /* para background, hero-section */
-    --color-secondary-dark: #2d2d2d; /* para background escuro tipo chumbo */
-    --color-font: #1f2937; /* para textos */
+    --color-primary: #e4ddd3;
+    /* para a logo e textos */
+    --color-secondary: #84857b;
+    /* para background, hero-section */
+    --color-secondary-dark: #2d2d2d;
+    /* para background escuro tipo chumbo */
+    --color-font: #1f2937;
+    /* para textos */
     --principal-font: 'Inter', sans-serif;
 
     /* versões com opacidade */
-    --color-secondary-rgba-70: rgba(132, 133, 123, 0.7); /* para overlays */
-    --color-secondary-dark-rgba-60: rgba(45, 45, 45, 0.6); /* para overlays escuros */
+    --color-secondary-rgba-70: rgba(132, 133, 123, 0.7);
+    /* para overlays */
+    --color-secondary-dark-rgba-60: rgba(45, 45, 45, 0.6);
+    /* para overlays escuros */
+
+    /* spacing */
+    --space-xs: 0.5rem;
+    --space-sm: 1rem;
+    --space-md: 1.5rem;
+    --space-lg: 2rem;
+    --space-xl: 4rem;
+
+    /* radius */
+    --radius-sm: 0.5rem;
+    --radius-md: 1rem;
+    --radius-lg: 1.5rem;
+    --radius-full: 999px;
+
+    /* shadows */
+    --shadow-sm: 0 4px 12px rgba(0, 0, 0, 0.08);
+    --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.12);
+    --shadow-lg: 0 16px 48px rgba(0, 0, 0, 0.18);
+
+    /* transition */
+    --transition-fast: 150ms ease;
+    --transition-normal: 300ms ease;
 }
