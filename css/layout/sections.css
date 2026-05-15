@@ -1,0 +1,289 @@
+/* css/layout/sections.css */
+
+/* =========================
+    DEFAULT SECTION SPACING
+========================= */
+
+section {
+    position: relative;
+    padding-block: var(--space-xl);
+}
+
+/* =========================
+    MISSION SECTION
+========================= */
+
+.mission-section {
+    overflow: hidden;
+
+    background:
+        linear-gradient(rgba(45, 45, 45, 0.72),
+            rgba(45, 45, 45, 0.72)),
+        url('../../assets/img/mission-background.webp');
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.mission-container {
+    width: min(100% - 2rem, 900px);
+
+    margin-inline: auto;
+}
+
+.mission-card {
+    padding: clamp(2rem, 4vw, 4rem);
+
+    background-color: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(12px);
+
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: var(--radius-lg);
+
+    box-shadow: var(--shadow-lg);
+
+    text-align: center;
+}
+
+.mission-title {
+    margin-bottom: var(--space-md);
+
+    color: var(--color-primary);
+
+    font-size: clamp(2rem, 4vw, 3rem);
+    font-weight: 600;
+    line-height: 1.1;
+}
+
+.mission-text {
+    max-width: 65ch;
+
+    margin-inline: auto;
+
+    color: rgba(255, 255, 255, 0.92);
+
+    font-size: 1.05rem;
+    line-height: 1.9;
+}
+
+/* =========================
+    SERVICES SECTION
+========================= */
+
+.services-section {
+    background-color: #ffffff;
+}
+
+.services-header {
+    width: min(100% - 2rem, 800px);
+
+    margin-inline: auto;
+    margin-bottom: var(--space-xl);
+
+    text-align: center;
+}
+
+.services-title {
+    margin-bottom: var(--space-sm);
+
+    color: var(--color-font);
+
+    font-size: clamp(2rem, 4vw, 3rem);
+    font-weight: 600;
+}
+
+.services-subtitle {
+    color: var(--color-secondary-dark);
+
+    font-size: 1.05rem;
+    line-height: 1.7;
+}
+
+.services-container {
+    overflow: hidden;
+
+    width: 100%;
+}
+
+/* =========================
+    TEAM SECTION
+========================= */
+
+.team-section {
+    background-color: #f8f8f8;
+}
+
+.team-container {
+    width: min(100% - 2rem, 1280px);
+
+    margin-inline: auto;
+}
+
+.team-header {
+    margin-bottom: 5rem;
+
+    text-align: center;
+}
+
+.team-title {
+    margin-bottom: var(--space-sm);
+
+    color: var(--color-font);
+
+    font-size: clamp(2rem, 4vw, 3rem);
+    font-weight: 600;
+}
+
+.team-subtitle {
+    color: var(--color-secondary-dark);
+
+    font-size: 1.05rem;
+}
+
+.team-member+.team-member {
+    margin-top: 5rem;
+}
+
+/* =========================
+    TESTIMONIALS SECTION
+========================= */
+
+.testimonials {
+    background-color: #ffffff;
+}
+
+.testimonials-container {
+    width: min(100% - 2rem, 1280px);
+
+    margin-inline: auto;
+}
+
+.testimonials-title {
+    margin-bottom: 4rem;
+
+    text-align: center;
+
+    color: var(--color-font);
+
+    font-size: clamp(2rem, 4vw, 3rem);
+    font-weight: 600;
+}
+
+/* =========================
+    CTA SECTION
+========================= */
+
+.cta {
+    overflow: hidden;
+
+    background:
+        linear-gradient(rgba(45, 45, 45, 0.82),
+            rgba(45, 45, 45, 0.82)),
+        url('../../assets/img/cta-background.webp');
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.cta-container {
+    width: min(100% - 2rem, 900px);
+
+    margin-inline: auto;
+}
+
+.cta-content {
+    text-align: center;
+}
+
+.cta-title {
+    margin-bottom: var(--space-md);
+
+    color: var(--color-primary);
+
+    font-size: clamp(2.2rem, 5vw, 4rem);
+    font-weight: 700;
+    line-height: 1.1;
+}
+
+.cta-subtitle {
+    max-width: 60ch;
+
+    margin-inline: auto;
+    margin-bottom: var(--space-xl);
+
+    color: rgba(255, 255, 255, 0.92);
+
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+.cta-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    gap: var(--space-md);
+}
+
+/* =========================
+    LOCATION SECTION
+========================= */
+
+.location-section {
+    background-color: #f8f8f8;
+}
+
+.location-container {
+    width: min(100% - 2rem, 1280px);
+
+    margin-inline: auto;
+
+    text-align: center;
+}
+
+.location-title {
+    margin-bottom: var(--space-sm);
+
+    color: var(--color-font);
+
+    font-size: clamp(2rem, 4vw, 3rem);
+    font-weight: 600;
+}
+
+.location-subtitle {
+    margin-bottom: 4rem;
+
+    color: var(--color-secondary-dark);
+
+    font-size: 1.05rem;
+}
+
+/* =========================
+    RESPONSIVE
+========================= */
+
+@media (max-width: 768px) {
+    section {
+        padding-block: 5rem;
+    }
+
+    .team-header,
+    .testimonials-title,
+    .location-subtitle {
+        margin-bottom: 3rem;
+    }
+
+    .team-member+.team-member {
+        margin-top: 4rem;
+    }
+
+    .mission-text,
+    .services-subtitle,
+    .cta-subtitle,
+    .location-subtitle {
+        font-size: 1rem;
+    }
+}
