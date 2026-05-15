@@ -575,11 +575,18 @@
       </section>
 
       <!-- Testimonials Section -->
-      <section class="testimonials" id="testimonials">
+      <section
+        class="testimonials"
+        id="testimonials"
+        role="region"
+        aria-label="Depoimentos de clientes"
+      >
         <div class="testimonials-container">
           <h2 class="testimonials-title">O que nossos clientes dizem</h2>
+
           <div class="testimonials-grid">
-            <div
+            <!-- Card 1 -->
+            <article
               class="testimonial-card"
               data-aos="fade-up"
               data-aos-delay="100"
@@ -590,13 +597,15 @@
                   com o estresse do dia a dia. Recomendo!"
                 </p>
               </div>
-              <div class="testimonial-author">
+
+              <footer class="testimonial-author">
                 <h4>Maria Silva</h4>
                 <span>Cliente há 2 anos</span>
-              </div>
-            </div>
+              </footer>
+            </article>
 
-            <div
+            <!-- Card 2 -->
+            <article
               class="testimonial-card"
               data-aos="fade-up"
               data-aos-delay="200"
@@ -607,13 +616,15 @@
                   musculares. Profissionais muito qualificadas!"
                 </p>
               </div>
-              <div class="testimonial-author">
+
+              <footer class="testimonial-author">
                 <h4>João Santos</h4>
                 <span>Cliente há 1 ano</span>
-              </div>
-            </div>
+              </footer>
+            </article>
 
-            <div
+            <!-- Card 3 -->
+            <article
               class="testimonial-card"
               data-aos="fade-up"
               data-aos-delay="300"
@@ -624,11 +635,12 @@
                   renovada a cada sessão!"
                 </p>
               </div>
-              <div class="testimonial-author">
+
+              <footer class="testimonial-author">
                 <h4>Ana Costa</h4>
                 <span>Cliente há 3 anos</span>
-              </div>
-            </div>
+              </footer>
+            </article>
           </div>
         </div>
       </section>
@@ -638,19 +650,30 @@
         <div class="cta-container">
           <div class="cta-content" data-aos="zoom-in">
             <h2 class="cta-title">Pronto para cuidar de você?</h2>
+
             <p class="cta-subtitle">
               Agende sua consulta e descubra como podemos ajudar você a alcançar
               seu bem-estar
             </p>
+
             <div class="cta-buttons">
-              <a href="tel:+5573991054557" class="btn-primary">Ligar agora</a>
+              <a
+                href="tel:+5573991054557"
+                class="btn-primary"
+                aria-label="Ligar para a clínica"
+              >
+                Ligar agora
+              </a>
+
               <a
                 href="https://wa.me/5573991054557"
                 class="btn-secondary"
                 target="_blank"
                 rel="noopener"
-                >WhatsApp</a
+                aria-label="Abrir WhatsApp da clínica"
               >
+                WhatsApp
+              </a>
             </div>
           </div>
         </div>
