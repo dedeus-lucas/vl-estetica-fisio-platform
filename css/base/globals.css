@@ -1,19 +1,66 @@
+/* css/base/globals.css */
+
+html {
+    background-color: var(--color-secondary);
+}
+
 body {
-    background-color: #fff;
+    min-height: 100vh;
+    background-color: var(--color-secondary);
     color: var(--color-font);
-    font-family: var(--principal-font);
+    overflow-x: hidden;
 }
 
-.container {
-    width: min(100% - 2rem, 1200px);
-    margin-inline: auto;
+/* Selection */
+::selection {
+    background-color: var(--color-primary);
+    color: var(--color-secondary-dark);
 }
 
-.section {
-    padding: 6rem 0;
+/* Focus accessibility */
+:focus-visible {
+    outline: 2px solid var(--color-primary);
+    outline-offset: 4px;
 }
 
+/* Smooth anchor offset for sticky header */
+section {
+    scroll-margin-top: 120px;
+}
+
+/* Default media behavior */
 img {
-    display: block;
-    max-width: 100%;
+    height: auto;
+}
+
+/* Default interactive transitions */
+a,
+button {
+    transition:
+        color var(--transition-fast),
+        background-color var(--transition-fast),
+        border-color var(--transition-fast),
+        transform var(--transition-fast),
+        opacity var(--transition-fast);
+}
+
+/* Prevent layout breaking */
+iframe {
+    width: 100%;
+    border: 0;
+}
+
+/* Better default paragraph rendering */
+p {
+    text-wrap: pretty;
+}
+
+/* Better heading rendering */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-wrap: balance;
 }
