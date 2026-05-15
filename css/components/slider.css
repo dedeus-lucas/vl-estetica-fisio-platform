@@ -1,0 +1,109 @@
+/* css/components/slider.css */
+
+/* =========================
+    SERVICES SLIDER
+========================= */
+
+.services-slider {
+    position: relative;
+
+    width: 100%;
+
+    overflow: hidden;
+
+    cursor: grab;
+}
+
+.services-slider:active {
+    cursor: grabbing;
+}
+
+.services-wrapper {
+    display: flex;
+    align-items: stretch;
+
+    gap: var(--space-lg);
+
+    width: max-content;
+
+    will-change: transform;
+}
+
+/* =========================
+    SLIDER FADE EFFECT
+========================= */
+
+.services-slider::before,
+.services-slider::after {
+    content: '';
+
+    position: absolute;
+    top: 0;
+    z-index: 5;
+
+    width: 120px;
+    height: 100%;
+
+    pointer-events: none;
+}
+
+.services-slider::before {
+    left: 0;
+
+    background:
+        linear-gradient(to right,
+            #ffffff,
+            rgba(255, 255, 255, 0));
+}
+
+.services-slider::after {
+    right: 0;
+
+    background:
+        linear-gradient(to left,
+            #ffffff,
+            rgba(255, 255, 255, 0));
+}
+
+/* =========================
+    SLIDER INTERACTION STATES
+========================= */
+
+.services-slider.is-paused .services-wrapper {
+    animation-play-state: paused;
+}
+
+.services-slider.is-dragging {
+    cursor: grabbing;
+}
+
+.services-slider.is-dragging .service-card {
+    user-select: none;
+    pointer-events: none;
+}
+
+/* =========================
+    PERFORMANCE
+========================= */
+
+.service-card,
+.services-wrapper {
+    backface-visibility: hidden;
+    transform: translateZ(0);
+}
+
+/* =========================
+    RESPONSIVE
+========================= */
+
+@media (max-width: 768px) {
+
+    .services-slider::before,
+    .services-slider::after {
+        width: 48px;
+    }
+
+    .services-wrapper {
+        gap: var(--space-md);
+    }
+}
