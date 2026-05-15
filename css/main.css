@@ -1,18 +1,39 @@
+/* =========================
+    BASE
+========================= */
+
 @import url('./base/reset.css');
 @import url('./base/variables.css');
 @import url('./base/typography.css');
 @import url('./base/globals.css');
 @import url('./base/animations.css');
 
+/* =========================
+    LAYOUT
+========================= */
+
 @import url('./layout/header.css');
 @import url('./layout/hero.css');
 @import url('./layout/sections.css');
 @import url('./layout/footer.css');
+@import url('./layout/grid.css');
+
+/* =========================
+    COMPONENTS
+========================= */
 
 @import url('./components/buttons.css');
 @import url('./components/cards.css');
 @import url('./components/slider.css');
+@import url('./components/testimonials.css');
+@import url('./components/overlays.css');
+@import url('./components/social.css');
 
+/* =========================
+    UTILITIES
+========================= */
+
+@import url('./utilities/spacing.css');
 @import url('./utilities/containers.css');
 @import url('./utilities/helpers.css');
 @import url('./utilities/responsive.css');
