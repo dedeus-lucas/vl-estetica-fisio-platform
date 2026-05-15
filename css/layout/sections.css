@@ -189,8 +189,30 @@ section {
 }
 
 /* =========================
-   TEAM SECTION
+    TEAM SECTION
 ========================= */
+
+.section-badge {
+    display: inline-block;
+
+    padding: 0.4rem 1rem;
+
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+
+    color: var(--color-primary);
+
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+
+    border-radius: var(--radius-full);
+
+    backdrop-filter: blur(10px);
+
+    margin-bottom: var(--space-sm);
+}
 
 .team-section {
     position: relative;
