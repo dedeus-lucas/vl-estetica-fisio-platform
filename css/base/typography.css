@@ -1,0 +1,79 @@
+/* css/base/typography.css */
+
+body {
+    font-family: var(--principal-font);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+}
+
+/* Headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--color-primary);
+    line-height: 1.1;
+    font-weight: 600;
+}
+
+/* Paragraphs */
+p {
+    line-height: 1.7;
+}
+
+/* Links */
+a {
+    font: inherit;
+}
+
+/* Buttons */
+button {
+    font: inherit;
+}
+
+/* Inputs */
+input,
+textarea,
+select {
+    font: inherit;
+}
+
+/* Strong */
+strong {
+    font-weight: 700;
+}
+
+/* Small text */
+small {
+    font-size: 0.875rem;
+}
+
+/* Typography scale */
+h1 {
+    font-size: clamp(2.5rem, 5vw, 4.5rem);
+}
+
+h2 {
+    font-size: clamp(2rem, 4vw, 3.5rem);
+}
+
+h3 {
+    font-size: clamp(1.5rem, 3vw, 2.25rem);
+}
+
+h4 {
+    font-size: 1.25rem;
+}
+
+h5 {
+    font-size: 1.125rem;
+}
+
+h6 {
+    font-size: 1rem;
+}
