@@ -1,0 +1,309 @@
+/* css/components/cards.css */
+
+/* =========================
+    SERVICE CARDS
+========================= */
+
+.service-card {
+    flex: 0 0 340px;
+
+    overflow: hidden;
+
+    background-color: #ffffff;
+
+    border-radius: var(--radius-lg);
+
+    box-shadow: var(--shadow-md);
+
+    transition:
+        transform var(--transition-normal),
+        box-shadow var(--transition-normal);
+}
+
+.service-card:hover {
+    transform: translateY(-8px);
+
+    box-shadow: var(--shadow-lg);
+}
+
+.service-card img {
+    width: 100%;
+    height: 260px;
+
+    object-fit: cover;
+}
+
+.service-card h3 {
+    padding-inline: var(--space-md);
+    padding-top: var(--space-md);
+    margin-bottom: var(--space-xs);
+
+    color: var(--color-font);
+
+    font-size: 1.35rem;
+    font-weight: 600;
+}
+
+.service-card p {
+    padding-inline: var(--space-md);
+    padding-bottom: var(--space-lg);
+
+    color: var(--color-secondary-dark);
+
+    line-height: 1.7;
+}
+
+/* =========================
+    TEAM CARDS
+========================= */
+
+.team-member {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+
+    gap: 4rem;
+}
+
+.team-member.reverse .team-photo {
+    order: 2;
+}
+
+.team-member.reverse .team-content {
+    order: 1;
+}
+
+.team-photo {
+    position: relative;
+}
+
+.team-photo::before {
+    content: '';
+
+    position: absolute;
+    inset: 0;
+
+    background:
+        linear-gradient(to top,
+            rgba(0, 0, 0, 0.18),
+            transparent);
+
+    border-radius: var(--radius-lg);
+
+    pointer-events: none;
+}
+
+.portrait {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    border-radius: var(--radius-lg);
+
+    box-shadow: var(--shadow-lg);
+}
+
+.team-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.member-name {
+    margin-bottom: var(--space-xs);
+
+    color: var(--color-font);
+
+    font-size: clamp(1.8rem, 3vw, 2.5rem);
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+.member-role {
+    margin-bottom: var(--space-lg);
+
+    color: var(--color-secondary);
+
+    font-size: 1.05rem;
+    font-weight: 500;
+}
+
+.member-bio {
+    display: flex;
+    flex-direction: column;
+
+    gap: var(--space-md);
+
+    padding-left: 1.25rem;
+}
+
+.member-bio li {
+    position: relative;
+
+    color: var(--color-secondary-dark);
+
+    line-height: 1.8;
+}
+
+.member-bio li::marker {
+    color: var(--color-secondary);
+}
+
+/* =========================
+    TESTIMONIAL CARDS
+========================= */
+
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: var(--space-lg);
+}
+
+.testimonial-card {
+    height: 100%;
+
+    padding: 2rem;
+
+    background-color: #ffffff;
+
+    border-radius: var(--radius-lg);
+
+    box-shadow: var(--shadow-md);
+
+    transition:
+        transform var(--transition-normal),
+        box-shadow var(--transition-normal);
+}
+
+.testimonial-card:hover {
+    transform: translateY(-6px);
+
+    box-shadow: var(--shadow-lg);
+}
+
+.testimonial-content {
+    margin-bottom: var(--space-lg);
+}
+
+.testimonial-content p {
+    color: var(--color-secondary-dark);
+
+    font-size: 1rem;
+    line-height: 1.9;
+    font-style: italic;
+}
+
+.testimonial-author h4 {
+    margin-bottom: 0.25rem;
+
+    color: var(--color-font);
+
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.testimonial-author span {
+    color: var(--color-secondary);
+
+    font-size: 0.95rem;
+}
+
+/* =========================
+    MAP CARD
+========================= */
+
+.map-container {
+    overflow: hidden;
+
+    border-radius: var(--radius-lg);
+
+    box-shadow: var(--shadow-lg);
+}
+
+.btn-route {
+    position: relative;
+
+    display: block;
+}
+
+.map-image {
+    width: 100%;
+    height: auto;
+
+    transition: transform 600ms ease;
+}
+
+.btn-route:hover .map-image {
+    transform: scale(1.03);
+}
+
+.map-overlay {
+    position: absolute;
+    inset: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: rgba(0, 0, 0, 0.35);
+
+    opacity: 0;
+
+    transition: opacity var(--transition-normal);
+}
+
+.btn-route:hover .map-overlay {
+    opacity: 1;
+}
+
+.map-overlay span {
+    padding: 0.9rem 1.5rem;
+
+    background-color: rgba(255, 255, 255, 0.92);
+
+    border-radius: var(--radius-full);
+
+    color: var(--color-font);
+
+    font-weight: 600;
+}
+
+/* =========================
+    RESPONSIVE
+========================= */
+
+@media (max-width: 992px) {
+    .team-member {
+        grid-template-columns: 1fr;
+
+        gap: 3rem;
+    }
+
+    .team-member.reverse .team-photo,
+    .team-member.reverse .team-content {
+        order: initial;
+    }
+
+    .testimonials-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .service-card {
+        flex: 0 0 85%;
+    }
+
+    .service-card img {
+        height: 220px;
+    }
+
+    .testimonial-card {
+        padding: 1.5rem;
+    }
+
+    .member-name {
+        font-size: 1.8rem;
+    }
+}
