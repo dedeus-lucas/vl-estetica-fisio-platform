@@ -88,6 +88,11 @@
         transform var(--transition-fast);
 }
 
+.nav-link.active {
+    opacity: 1;
+    font-weight: 500;
+}
+
 /* Underline animation */
 .nav-link::after {
     content: '';
