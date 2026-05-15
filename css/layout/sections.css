@@ -43,57 +43,110 @@ section {
 ========================= */
 
 .mission-section {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    min-height: 85vh;
+
     overflow: hidden;
 
-    background:
-        linear-gradient(rgba(45, 45, 45, 0.72),
-            rgba(45, 45, 45, 0.72)),
+    background-image:
         url('../../assets/img/mission-background.webp');
 
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
 }
 
-.mission-container {
-    width: min(100% - 2rem, 900px);
+.mission-overlay {
+    position: absolute;
+    inset: 0;
 
-    margin-inline: auto;
+    background:
+        linear-gradient(to bottom,
+            rgba(0, 0, 0, 0.45),
+            rgba(0, 0, 0, 0.55));
+}
+
+.mission-section .container {
+    position: relative;
+    z-index: 2;
+
+    display: flex;
+    justify-content: center;
 }
 
 .mission-card {
-    padding: clamp(2rem, 4vw, 4rem);
+    width: 100%;
+    max-width: 720px;
 
-    background-color: rgba(255, 255, 255, 0.08);
-    backdrop-filter: blur(12px);
+    padding: clamp(2rem, 4vw, 3.5rem);
 
     border: 1px solid rgba(255, 255, 255, 0.12);
-    border-radius: var(--radius-lg);
+    border-radius: var(--radius-xl);
 
-    box-shadow: var(--shadow-lg);
+    background: rgba(255, 255, 255, 0.08);
+
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+
+    box-shadow:
+        0 10px 40px rgba(0, 0, 0, 0.25);
 
     text-align: center;
 }
 
-.mission-title {
+.mission-badge {
+    display: inline-flex;
+
     margin-bottom: var(--space-md);
+
+    color: rgba(255, 255, 255, 0.75);
+
+    font-size: 0.85rem;
+    font-weight: 500;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+}
+
+.mission-title {
+    margin-bottom: var(--space-lg);
 
     color: var(--color-primary);
 
-    font-size: clamp(2rem, 4vw, 3rem);
+    font-size: clamp(2rem, 5vw, 3rem);
     font-weight: 600;
     line-height: 1.1;
 }
 
 .mission-text {
-    max-width: 65ch;
-
-    margin-inline: auto;
-
-    color: rgba(255, 255, 255, 0.92);
+    color: rgba(255, 255, 255, 0.88);
 
     font-size: 1.05rem;
     line-height: 1.9;
+}
+
+.mission-text+.mission-text {
+    margin-top: var(--space-md);
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .mission-section {
+        min-height: 70vh;
+    }
+
+    .mission-card {
+        padding: 2rem 1.5rem;
+    }
+
+    .mission-text {
+        font-size: 1rem;
+        line-height: 1.8;
+    }
 }
 
 /* =========================
