@@ -1,0 +1,19 @@
+body {
+    background-color: #fff;
+    color: var(--color-font);
+    font-family: var(--principal-font);
+}
+
+.container {
+    width: min(100% - 2rem, 1200px);
+    margin-inline: auto;
+}
+
+.section {
+    padding: 6rem 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
