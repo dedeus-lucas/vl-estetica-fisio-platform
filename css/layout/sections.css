@@ -189,42 +189,252 @@ section {
 }
 
 /* =========================
-    TEAM SECTION
+   TEAM SECTION
 ========================= */
 
 .team-section {
-    background-color: #f8f8f8;
+    position: relative;
+
+    background-color: var(--color-background);
+
+    overflow: hidden;
 }
 
-.team-container {
-    width: min(100% - 2rem, 1280px);
-
-    margin-inline: auto;
-}
-
+/* Header */
 .team-header {
-    margin-bottom: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
     text-align: center;
+
+    margin-bottom: clamp(4rem, 8vw, 7rem);
 }
 
 .team-title {
-    margin-bottom: var(--space-sm);
+    margin-top: var(--space-sm);
 
-    color: var(--color-font);
+    color: var(--color-text);
 
-    font-size: clamp(2rem, 4vw, 3rem);
+    font-size: clamp(2.4rem, 5vw, 4rem);
     font-weight: 600;
+    line-height: 1.1;
 }
 
 .team-subtitle {
-    color: var(--color-secondary-dark);
+    max-width: 680px;
+
+    margin-top: var(--space-md);
+
+    color: var(--color-text-light);
 
     font-size: 1.05rem;
+    line-height: 1.8;
 }
 
-.team-member+.team-member {
-    margin-top: 5rem;
+/* Team Member */
+.team-member {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+
+    gap: clamp(2rem, 5vw, 6rem);
+
+    margin-bottom: clamp(5rem, 10vw, 8rem);
+}
+
+/* Reverse Layout */
+.team-member.reverse .team-photo {
+    order: 2;
+}
+
+.team-member.reverse .team-content {
+    order: 1;
+}
+
+/* Photo */
+.team-photo {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.team-photo::before {
+    content: '';
+
+    position: absolute;
+
+    width: 75%;
+    height: 75%;
+
+    border-radius: 50%;
+
+    background:
+        radial-gradient(rgba(132, 133, 123, 0.18),
+            transparent 70%);
+
+    filter: blur(30px);
+
+    z-index: 0;
+}
+
+/* Image */
+.team-image {
+    position: relative;
+    z-index: 1;
+
+    width: 100%;
+    max-width: 460px;
+
+    object-fit: cover;
+
+    border-radius: var(--radius-xl);
+
+    box-shadow:
+        0 20px 50px rgba(0, 0, 0, 0.12);
+
+    transition:
+        transform var(--transition-normal),
+        box-shadow var(--transition-normal);
+}
+
+.team-image:hover {
+    transform: translateY(-6px);
+
+    box-shadow:
+        0 30px 70px rgba(0, 0, 0, 0.16);
+}
+
+/* Content */
+.team-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+/* Tag */
+.member-tag {
+    display: inline-flex;
+
+    margin-bottom: var(--space-md);
+    padding:
+        0.5rem 1rem;
+
+    border-radius: var(--radius-full);
+
+    background-color: rgba(132, 133, 123, 0.12);
+
+    color: var(--color-accent);
+
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+/* Name */
+.member-name {
+    margin-bottom: var(--space-sm);
+
+    color: var(--color-text);
+
+    font-size: clamp(2rem, 4vw, 3rem);
+    font-weight: 600;
+    line-height: 1.1;
+}
+
+/* Role */
+.member-role {
+    margin-bottom: var(--space-lg);
+
+    color: var(--color-accent);
+
+    font-size: 1.05rem;
+    font-weight: 500;
+
+    line-height: 1.7;
+}
+
+/* Bio */
+.member-bio {
+    display: flex;
+    flex-direction: column;
+
+    gap: var(--space-md);
+
+    list-style: none;
+}
+
+.member-bio li {
+    position: relative;
+
+    padding-left: 1.5rem;
+
+    color: var(--color-text-light);
+
+    line-height: 1.8;
+}
+
+.member-bio li::before {
+    content: '';
+
+    position: absolute;
+
+    top: 0.72rem;
+    left: 0;
+
+    width: 8px;
+    height: 8px;
+
+    border-radius: 50%;
+
+    background-color: var(--color-accent);
+}
+
+/* Tablet */
+@media (max-width: 992px) {
+    .team-member {
+        gap: 3rem;
+    }
+
+    .member-name {
+        font-size: 2.2rem;
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .team-member {
+        grid-template-columns: 1fr;
+
+        gap: 2.5rem;
+
+        margin-bottom: 5rem;
+    }
+
+    .team-member.reverse .team-photo,
+    .team-member.reverse .team-content {
+        order: initial;
+    }
+
+    .team-content {
+        text-align: center;
+        align-items: center;
+    }
+
+    .member-bio {
+        align-items: flex-start;
+    }
+
+    .team-image {
+        max-width: 360px;
+    }
+
+    .member-name {
+        font-size: 2rem;
+    }
 }
 
 /* =========================
