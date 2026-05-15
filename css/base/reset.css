@@ -1,30 +1,25 @@
-/* reset.css */
-/* Reset CSS moderno para base de landing pages */
+/* css/base/reset.css */
 
+/* Box sizing */
 *,
 *::before,
 *::after {
     box-sizing: border-box;
+}
+
+/* Remove default spacing */
+* {
     margin: 0;
     padding: 0;
 }
 
-html,
-body {
-    background-color: var(--color-secondary);
-    height: 100%;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-        Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-    line-height: 1.5;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+/* Root defaults */
+html {
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
 }
 
-body {
-    background-color: #fff;
-    color: #111;
-}
-
+/* Media defaults */
 img,
 picture,
 video,
@@ -34,35 +29,52 @@ svg {
     max-width: 100%;
 }
 
+/* Form elements */
 input,
 button,
 textarea,
 select {
     font: inherit;
-    border: none;
-    outline: none;
-    background: none;
-}
-
-button {
-    cursor: pointer;
-}
-
-a {
-    text-decoration: none;
     color: inherit;
 }
 
-ul[role='list'],
-ol[role='list'] {
+/* Buttons */
+button {
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+/* Links */
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* Lists */
+ul,
+ol {
     list-style: none;
 }
 
+/* Tables */
 table {
     border-collapse: collapse;
     border-spacing: 0;
 }
 
+/* Textareas */
+textarea {
+    resize: vertical;
+}
+
+/* Prevent overflow */
+body {
+    min-height: 100vh;
+    text-rendering: optimizeSpeed;
+}
+
+/* Code */
 code,
 pre {
     font-family: monospace, monospace;
