@@ -10,15 +10,9 @@
     width: 100%;
 
     overflow: hidden;
-
-    cursor: grab;
 }
 
-.services-slider:active {
-    cursor: grabbing;
-}
-
-.services-wrapper {
+.services-track {
     display: flex;
     align-items: stretch;
 
@@ -27,6 +21,20 @@
     width: max-content;
 
     will-change: transform;
+}
+
+/* Prevent selection while dragging */
+.services-track.dragging {
+    cursor: grabbing;
+
+    user-select: none;
+}
+
+/* Mobile spacing */
+@media (max-width: 768px) {
+    .services-track {
+        gap: var(--space-md);
+    }
 }
 
 /* =========================
