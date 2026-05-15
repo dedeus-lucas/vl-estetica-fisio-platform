@@ -1,5 +1,3 @@
-/* css/variables.css */
-
 :root {
 
     /* =========================================================
@@ -25,13 +23,46 @@
     --color-border-light: rgba(255, 255, 255, 0.08);
     --color-border-medium: rgba(255, 255, 255, 0.12);
 
+
+    /* =========================================================
+    SURFACES (UI LAYERS)
+    ========================================================= */
+
+    --surface-1: #ffffff;
+    --surface-2: #f7f7f5;
+    --surface-3: #ecebe7;
+    --surface-dark: #2d2d2d;
+
+
+    /* =========================================================
+    BACKGROUNDS
+    ========================================================= */
+
+    --bg-primary: #ffffff;
+    --bg-secondary: #f9f8f5;
+    --bg-overlay-dark: rgba(0, 0, 0, 0.4);
+
+
+    /* =========================================================
+    GLASSMORPHISM
+    ========================================================= */
+
+    --glass-bg: rgba(255, 255, 255, 0.08);
+    --glass-bg-strong: rgba(255, 255, 255, 0.12);
+
+    --glass-border: rgba(255, 255, 255, 0.18);
+
+    --glass-blur-sm: 8px;
+    --glass-blur-md: 14px;
+    --glass-blur-lg: 20px;
+
+
     /* =========================================================
     TYPOGRAPHY
     ========================================================= */
 
     --font-primary: 'Inter', sans-serif;
 
-    /* font sizes */
     --text-xs: 0.75rem;
     --text-sm: 0.875rem;
     --text-md: 1rem;
@@ -40,24 +71,21 @@
     --text-2xl: 2rem;
     --text-3xl: 2.5rem;
 
-    /* responsive hero */
     --text-hero: clamp(3rem, 8vw, 5rem);
 
-    /* font weights */
     --font-light: 300;
     --font-regular: 400;
     --font-medium: 500;
     --font-semibold: 600;
     --font-bold: 700;
 
-    /* line heights */
     --line-tight: 1.1;
     --line-normal: 1.5;
     --line-relaxed: 1.8;
 
-    /* letter spacing */
     --tracking-tight: -0.05rem;
     --tracking-normal: 0;
+
 
     /* =========================================================
     SPACING
@@ -72,6 +100,7 @@
     --space-2xl: 6rem;
     --space-3xl: 8rem;
 
+
     /* =========================================================
     BORDER RADIUS
     ========================================================= */
@@ -83,17 +112,20 @@
     --radius-xl: 2rem;
     --radius-full: 999px;
 
+
     /* =========================================================
     SHADOWS
     ========================================================= */
 
     --shadow-sm: 0 4px 12px rgba(0, 0, 0, 0.08);
-
     --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.12);
-
     --shadow-lg: 0 16px 48px rgba(0, 0, 0, 0.18);
-
     --shadow-xl: 0 24px 64px rgba(0, 0, 0, 0.24);
+
+    /* extras (UI premium) */
+    --shadow-soft: 0 4px 16px rgba(0, 0, 0, 0.06);
+    --shadow-glow: 0 0 30px rgba(228, 221, 211, 0.25);
+
 
     /* =========================================================
     TRANSITIONS
@@ -102,6 +134,7 @@
     --transition-fast: 150ms ease;
     --transition-normal: 300ms ease;
     --transition-slow: 500ms ease;
+
 
     /* =========================================================
     CONTAINERS
@@ -113,6 +146,7 @@
     --container-xl: 1200px;
     --container-2xl: 1440px;
 
+
     /* =========================================================
     Z-INDEX
     ========================================================= */
@@ -123,6 +157,7 @@
     --z-modal: 2000;
     --z-toast: 3000;
 
+
     /* =========================================================
     BLUR
     ========================================================= */
@@ -131,6 +166,7 @@
     --blur-md: 10px;
     --blur-lg: 20px;
 
+
     /* =========================================================
     SECTION PADDING
     ========================================================= */
@@ -138,4 +174,12 @@
     --section-padding-desktop: 6rem 2rem;
     --section-padding-tablet: 5rem 1.5rem;
     --section-padding-mobile: 4rem 1rem;
+
+
+    /* =========================================================
+    HEADER (FIX NAVBAR GLASS + CONSISTENCY)
+    ========================================================= */
+
+    --header-bg: rgba(132, 133, 123, 0.75);
+    --header-blur: 12px;
 }
