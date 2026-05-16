@@ -485,64 +485,6 @@ section {
 }
 
 /* =========================
-    CTA SECTION
-========================= */
-
-.cta {
-    overflow: hidden;
-
-    background:
-        linear-gradient(rgba(45, 45, 45, 0.82),
-            rgba(45, 45, 45, 0.82)),
-        url('../../assets/img/cta-background.webp');
-
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.cta-container {
-    width: min(100% - 2rem, 900px);
-
-    margin-inline: auto;
-}
-
-.cta-content {
-    text-align: center;
-}
-
-.cta-title {
-    margin-bottom: var(--space-md);
-
-    color: var(--color-primary);
-
-    font-size: clamp(2.2rem, 5vw, 4rem);
-    font-weight: 700;
-    line-height: 1.1;
-}
-
-.cta-subtitle {
-    max-width: 60ch;
-
-    margin-inline: auto;
-    margin-bottom: var(--space-xl);
-
-    color: rgba(255, 255, 255, 0.92);
-
-    font-size: 1.1rem;
-    line-height: 1.8;
-}
-
-.cta-buttons {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-
-    gap: var(--space-md);
-}
-
-/* =========================
     LOCATION SECTION
 ========================= */
 
