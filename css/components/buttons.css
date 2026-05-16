@@ -74,6 +74,7 @@
 
 .cta-buttons {
     display: flex;
+    align-items: center;
     justify-content: center;
     gap: var(--space-md);
     flex-wrap: wrap;

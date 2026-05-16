@@ -10,6 +10,9 @@
 
     overflow: hidden;
 
+    min-height: calc(100vh - 88px);
+    padding-top: 88px;
+
     background:
         linear-gradient(to bottom,
             var(--color-secondary-rgba-70),

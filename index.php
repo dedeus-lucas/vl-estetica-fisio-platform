@@ -519,7 +519,7 @@
           <!-- Left Content -->
           <div class="cta-content" data-aos="fade-right">
             <span class="section-tag">
-              VL · Estética & Fisioterapia
+              VL · Contato
             </span>
 
             <h2 class="cta-title">
@@ -615,24 +615,44 @@
                     Selecione um serviço
                   </option>
 
+                  <option value="Avaliação">
+                    Avaliação
+                  </option>
+
                   <option value="Fisioterapia">
                     Fisioterapia
                   </option>
 
-                  <option value="Massagem Relaxante">
-                    Massagem Relaxante
+                  <option value="Ventosaterapia">
+                    Ventosaterapia
                   </option>
 
                   <option value="Liberação Miofascial">
                     Liberação Miofascial
                   </option>
 
+                  <option value="Massagem Facial">
+                    Massagem Facial
+                  </option>
+
+                  <option value="Massagem Relaxante">
+                    Massagem Relaxante
+                  </option>
+
+                  <option value="Auriculoterapia">
+                    Auriculoterapia
+                  </option>
+
                   <option value="Drenagem Linfática">
                     Drenagem Linfática
                   </option>
 
-                  <option value="Ventosaterapia">
-                    Ventosaterapia
+                  <option value="Dry Needling">
+                    Dry Needling
+                  </option>
+
+                  <option value="Massagem Detox">
+                    Massagem Detox
                   </option>
                 </select>
               </div>
