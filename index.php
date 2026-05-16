@@ -670,6 +670,15 @@
                 ></textarea>
               </div>
 
+              <div class="form-honeypot" aria-hidden="true">
+                <input
+                  type="text"
+                  name="company"
+                  tabindex="-1"
+                  autocomplete="off"
+                />
+              </div>
+
               <button
                 type="submit"
                 class="btn-primary form-submit"
