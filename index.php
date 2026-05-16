@@ -512,35 +512,157 @@
       </div>
     </section>
 
-    <!-- Call to Action Section -->
+    <!-- Contact / CTA Section -->
     <section class="cta" id="contact">
-      <div class="cta-container">
-        <div class="cta-content" data-aos="zoom-in">
-          <h2 class="cta-title">Pronto para cuidar de você?</h2>
+      <div class="container">
+        <div class="cta-wrapper">
+          <!-- Left Content -->
+          <div class="cta-content" data-aos="fade-right">
+            <span class="section-tag">
+              VL · Estética & Fisioterapia
+            </span>
 
-          <p class="cta-subtitle">
-            Agende sua consulta e descubra como podemos ajudar você a alcançar
-            seu bem-estar
-          </p>
+            <h2 class="cta-title">
+              Pronto para cuidar de você?
+            </h2>
 
-          <div class="cta-buttons">
-            <a
-              href="tel:+5573991054557"
-              class="btn-primary"
-              aria-label="Ligar para a clínica"
+            <p class="cta-subtitle">
+              Agende sua consulta e descubra como podemos ajudar
+              você a alcançar mais saúde, bem-estar e qualidade de vida.
+            </p>
+
+            <div class="cta-buttons">
+              <a
+                href="tel:+5573991054557"
+                class="btn-primary"
+                aria-label="Ligar para a clínica"
+              >
+                Ligar agora
+              </a>
+
+              <a
+                href="https://wa.me/5573991054557"
+                class="btn-secondary"
+                target="_blank"
+                rel="noopener"
+                aria-label="Abrir WhatsApp da clínica"
+              >
+                WhatsApp
+              </a>
+            </div>
+          </div>
+
+          <!-- Contact Form -->
+          <div
+            class="contact-form-wrapper"
+            data-aos="fade-left"
+          >
+            <form
+              class="contact-form"
+              id="contact-form"
+              action="./php/forms/contact-form.php"
+              method="POST"
+              novalidate
             >
-              Ligar agora
-            </a>
+              <!-- Honeypot -->
+              <input
+                type="text"
+                name="website"
+                class="hidden-field"
+                tabindex="-1"
+                autocomplete="off"
+              />
 
-            <a
-              href="https://wa.me/5573991054557"
-              class="btn-secondary"
-              target="_blank"
-              rel="noopener"
-              aria-label="Abrir WhatsApp da clínica"
-            >
-              WhatsApp
-            </a>
+              <div class="form-group">
+                <label for="name">
+                  Nome
+                </label>
+
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Seu nome"
+                  required
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="phone">
+                  Telefone
+                </label>
+
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  placeholder="(73) 99999-9999"
+                  required
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="service">
+                  Serviço desejado
+                </label>
+
+                <select
+                  id="service"
+                  name="service"
+                  required
+                >
+                  <option value="">
+                    Selecione um serviço
+                  </option>
+
+                  <option value="Fisioterapia">
+                    Fisioterapia
+                  </option>
+
+                  <option value="Massagem Relaxante">
+                    Massagem Relaxante
+                  </option>
+
+                  <option value="Liberação Miofascial">
+                    Liberação Miofascial
+                  </option>
+
+                  <option value="Drenagem Linfática">
+                    Drenagem Linfática
+                  </option>
+
+                  <option value="Ventosaterapia">
+                    Ventosaterapia
+                  </option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="message">
+                  Mensagem
+                </label>
+
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="5"
+                  placeholder="Conte um pouco sobre o que você procura..."
+                ></textarea>
+              </div>
+
+              <button
+                type="submit"
+                class="btn-primary form-submit"
+              >
+                Agendar atendimento
+              </button>
+
+              <p
+                class="form-feedback"
+                id="form-feedback"
+                aria-live="polite"
+              ></p>
+            </form>
           </div>
         </div>
       </div>
