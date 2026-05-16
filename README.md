@@ -1,4 +1,4 @@
-# VL Estética & Fisioterapia — Landing Page
+# VL Estética & Fisioterapia - Landing Page
 
 ---
 
