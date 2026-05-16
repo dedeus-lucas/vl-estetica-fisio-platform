@@ -233,24 +233,52 @@
 }
 
 /* =========================
-    FEEDBACK
+    FORM FEEDBACK
 ========================= */
 
 .form-feedback {
-  min-height: 24px;
+  margin-top: 1rem;
 
-  font-size: 0.95rem;
-  font-weight: var(--font-medium);
+  padding: 1rem;
+
+  border-radius: var(--radius-md);
 
   text-align: center;
+
+  font-weight: 500;
+
+  animation: fadeIn .3s ease;
 }
 
 .form-feedback.success {
-  color: #15803d;
+  background: rgba(37, 211, 102, .12);
+
+  color: #1f7a43;
+
+  border: 1px solid rgba(37,
+      211,
+      102,
+      .3);
 }
 
 .form-feedback.error {
-  color: #dc2626;
+  background: rgba(239,
+      68,
+      68,
+      .1);
+
+  color: #c0392b;
+
+  border: 1px solid rgba(239,
+      68,
+      68,
+      .2);
+}
+
+.form-submit.loading {
+  opacity: .75;
+
+  cursor: wait;
 }
 
 /* =========================
